@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	{% include "template/header.html.twig" %}
+
+
+	<div class="main">
+		<h1>Bienvenue sur Fayflix</h1>
+		<h2>Liste de tout les téléchargements</h2>
+		<ul class="cards">
+			<li class="cards_item">
+				<div class="card">
+					<div class="card_image">
+						<video controls width="100%">
+
+
+							<source src="https://video.twimg.com/ext_tw_video/1589650087789084673/pu/vid/720x1134/Bk_fJ3k9b28BhxGy.mp4?tag=12" type="video/mp4">
+
+
+						</video>
+
+					</div>
+					<div class="card_content">
+						<button class="btn card_btn">Voir le tweet</button>
+						<button class="btn card_btn">Télécharger</button>
+					</div>
+				</div>
+
+			</li>
+			<li class="cards_item">
+				<div class="card">
+					<div class="card_image">
+						<video controls width="100%">
+
+
+							<source src="https://video.twimg.com/ext_tw_video/1589650087789084673/pu/vid/720x1134/Bk_fJ3k9b28BhxGy.mp4?tag=12" type="video/mp4">
+
+
+						</video>
+
+					</div>
+					<div class="card_content">
+						<button class="btn card_btn">Voir le tweet</button>
+						<button class="btn card_btn">Télécharger</button>
+					</div>
+				</div>
+
+			</li>
+			<li class="cards_item">
+				<div class="card">
+					<div class="card_image">
+						<video controls width="100%">
+
+
+							<source src="https://video.twimg.com/ext_tw_video/1589650087789084673/pu/vid/720x1134/Bk_fJ3k9b28BhxGy.mp4?tag=12" type="video/mp4">
+
+
+						</video>
+
+					</div>
+					<div class="card_content">
+						<button class="btn card_btn">Voir le tweet</button>
+						<button class="btn card_btn">Télécharger</button>
+					</div>
+				</div>
+
+			</li>
+		</ul>
+	</div>
+
+	<h3 class="made_by">Made with ♡</h3>
+{% endblock %}
