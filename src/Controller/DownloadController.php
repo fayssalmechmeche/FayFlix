@@ -2,15 +2,20 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class DownloadController extends AbstractController
 {
-    #[Route('/download/{slug}', name: 'app_download')]
-    public function index(): Response
+    #[Route('/download', name: 'app_download')]
+    public function download(): Response
     {
-        return $this->render('download/index.html.twig', []);
+        $version = time();
+        return $this->render('download/index.html.twig', [
+            'version' => $version
+        ]);
     }
 }
